@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Builder - PCFind</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">PCFind</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="builder.html">Builder</a>
+      <a href="parts.html">Parts</a>
+      <button id="toggle-theme">🌙</button>
+    </nav>
+  </header>
+  <main class="builder">
+    <h2>PC Builder</h2>
+    <form id="pc-form">
+      <label>CPU:</label>
+      <select id="cpu">
+        <option>-- Select CPU --</option>
+        <option value="intel">Intel i5 12400F</option>
+        <option value="amd">Ryzen 5 5600</option>
+      </select>
+
+      <label>Motherboard:</label>
+      <select id="mobo">
+        <option>-- Select Motherboard --</option>
+        <option value="intel">B660 (LGA1700)</option>
+        <option value="amd">B550 (AM4)</option>
+      </select>
+
+      <label>GPU:</label>
+      <select id="gpu">
+        <option>-- Select GPU --</option>
+        <option value="nvidia">RTX 3060</option>
+        <option value="amd">RX 6600</option>
+      </select>
+
+      <button type="button" id="check-btn">Check Compatibility</button>
+    </form>
+    <div id="result"></div>
+  </main>
+  <footer><p>© 2025 PCFind</p></footer>
+</body>
+</html>
